@@ -1,5 +1,6 @@
 package com.solucaotecnologia.CRUD_Cliente.entities;
 
+import com.solucaotecnologia.CRUD_Cliente.dto.ClientDTO;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -24,6 +25,15 @@ public class Client {
 
     public Client() {
 
+    }
+
+    public Client(ClientDTO dto) {
+        this.id = dto.getId();
+        this.name = dto.getName();
+        this.cpf = dto.getCpf();
+        this.income = dto.getIncome();
+        this.birthDate = dto.getBirthDate();
+        this.children = dto.getChildren();
     }
 
     public Long getId() {
