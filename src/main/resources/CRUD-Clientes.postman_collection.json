@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "ebbcdde0-ebdf-4bda-9d8d-122a6fad07e0",
+		"name": "CRUD-Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12965211",
+		"_collection_link": "https://speeding-moon-782385.postman.co/workspace/Aula-~16756b56-9eb1-4dd0-803f-1bf409741f1f/collection/12965211-ebbcdde0-ebdf-4bda-9d8d-122a6fad07e0?action=share&source=collection_link&creator=12965211"
+	},
+	"item": [
+		{
+			"name": "Client by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client by by pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/client?page=0&size=6&sort=name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "6"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"Maria Silva\", \r\n\"cpf\": \"12345678901\", \r\n\"income\": 6500.0, \r\n\"birthDate\": \"1994-07-20\", \r\n\"children\": 2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\": \"Maria dolores\", \r\n\"cpf\": \"12345678901\", \r\n\"income\": 6500.0, \r\n\"birthDate\": \"1994-07-20\", \r\n\"children\": 2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/client/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"client",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
