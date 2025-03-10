@@ -1,7 +1,7 @@
 ### Formação Desenvolvedor Moderno
 ### Módulo: Back end
 ### Capítulo: API REST, camadas, CRUD, exceções, validações
-# DESAFIO:  CRUD de clientes
+# DESAFIO:  CRUD Sistema de clientes
 *https://devsuperior.com.br/*
 
 
